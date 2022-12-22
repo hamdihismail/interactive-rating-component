@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon-container">
+        <img class="icon" src="./images/icon-star.svg" alt="icon" />
+      </div>
+      <h1 class="heading">How did we do?</h1>
+      <p class="body-text">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="ratings-container">
+        <span class="rating">1</span>
+        <span class="rating">2</span>
+        <span class="rating">3</span>
+        <span class="rating">4</span>
+        <span class="rating">5</span>
+      </div>
+      <button class="btn">SUBMIT</button>
+    </div>
+
+    <!-- Thank you state start -->
+    <div class="thank-you-card hide">
+      <div class="img-container"></div>
+      <div class="selections-result">You selected 4 out of 5</div>
+      <h1 class="thank-you">Thank you!</h1>
+      <div class="p-container"></div>
+      <p class="appreciate">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+
+    <!-- Thank you state end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Hamdi Ismail</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Color styles */
+$darkBlue: hsla(213, 19.1%, 18.4%, 1);
+$lightGray: hsla(217, 12.3%, 63.3%, 1);
+$mediumGray: hsla(216, 12%, 54.1%, 1);
+$orange: hsla(25, 97.5%, 53.3%, 1);
+$pureWhite: hsla(0, 0%, 100%, 1);
+$veryDarkBlue: hsla(216, 11.6%, 8.4%, 1);
+$blackGradient: radial-gradient(
+  98.96% 98.96% at 50% 0%,
+  #232a34 0%,
+  #181e27 100%
+);
+
+/* Text-size styles */
+$headingLarge: 28px;
+$ratingText: 16px;
+$headingMedium: 15px;
+$bodyText: 15px;
+
+// show/hide class
+.show {
+  visibility: visible;
+}
+.hide {
+  visibility: hidden;
+}
+//  hover/active starts
+.hoverNumber {
+  background: $mediumGray !important;
+  color: $pureWhite !important;
+}
+.activeNumber {
+  background: $orange !important;
+  color: $pureWhite !important;
+}
+.hoverBtn {
+  background: $pureWhite !important;
+  color: $orange !important;
+}

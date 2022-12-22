@@ -1,0 +1,226 @@
+@import 'utilities';
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+  font-size: 11px;
+  text-align: center;
+  color: $lightGray;
+}
+
+body {
+  //   position: relative;
+  background-color: $veryDarkBlue;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: $blackGradient;
+  width: 412px;
+  height: 416px;
+  left: 35%;
+  top: 195px;
+  overflow: hidden;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 600px) {
+    width: 327px;
+    height: 360px;
+    left: 24px;
+    top: 154px;
+  }
+
+  .icon-container {
+    position: absolute;
+    display: flex;
+    width: 48px;
+    height: 48px;
+    left: 7.77%;
+    right: 80.58%;
+    top: 7.69%;
+    bottom: 80.77%;
+    background-color: $darkBlue;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      position: absolute;
+    }
+  }
+
+  .heading {
+    color: $pureWhite;
+    font-size: $headingLarge;
+    font-weight: 700;
+    line-height: 35px;
+    position: absolute;
+    height: 35px;
+    left: 7.77%;
+    right: 43.45%;
+    top: calc(50% - 35px / 2 - 80.5px);
+
+    @media (max-width: 600px) {
+      height: 37px;
+      left: 7.34%;
+      right: 7.34%;
+      top: calc(50% - 37px / 2 - 81.5px);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  .body-text {
+    position: absolute;
+    color: $lightGray;
+    height: 72px;
+    left: 7.77%;
+    right: 9.71%;
+    top: calc(50% - 72px / 2 - 12px);
+    font-weight: 400;
+    font-size: $bodyText;
+    line-height: 24px;
+
+    @media (max-width: 600px) {
+      height: 66px;
+      left: 7.34%;
+      right: 7.34%;
+      top: calc(50% - 66px / 2 - 20px);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  .ratings-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 341px;
+    height: 51px;
+    left: 32px;
+    top: 256px;
+
+    @media (max-width: 600px) {
+      width: 281px;
+      height: 42px;
+      left: 24px;
+      top: 217px;
+    }
+
+    .rating {
+      display: flex;
+      cursor: pointer;
+      height: 51px;
+      width: 51px;
+      border-radius: 50%;
+      background: $darkBlue;
+      color: $mediumGray;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: $ratingText;
+      line-height: 24px;
+
+      @media (max-width: 600px) {
+        left: 25.38%;
+        right: 61.77%;
+        top: 60.28%;
+        bottom: 28.06%;
+      }
+    }
+  }
+
+  .btn {
+    position: absolute;
+    cursor: pointer;
+    background: $orange;
+    color: $pureWhite;
+    border: none;
+    width: 341px;
+    height: 45px;
+    left: 7.77%;
+    right: 9.47%;
+    top: 81.49%;
+    bottom: 7.69%;
+    border-radius: 22.5px;
+    font-weight: 700;
+    font-size: $headingMedium;
+    line-height: 19px;
+    letter-spacing: 2px;
+
+    @media (max-width: 600px) {
+      width: 279px;
+      height: 45px;
+      left: 7.34%;
+      right: 7.34%;
+      top: 78.61%;
+      bottom: 8.89%;
+    }
+  }
+}
+
+.thank-you-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: $blackGradient;
+  width: 412px;
+  height: 416px;
+  left: 35%;
+  top: 195px;
+  overflow: hidden;
+  border-radius: 30px;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 327px;
+    height: 360px;
+    left: 24px;
+    top: 154px;
+  }
+
+  .img-container {
+    position: absolute;
+    width: 162px;
+    height: 108px;
+    margin: 45px 129px 0 121px;
+    background: url(/images/illustration-thank-you.svg) center center/cover;
+  }
+
+  .selections-result {
+    display: flex;
+    width: 193px;
+    height: 32px;
+    border-radius: 22.5px;
+    background: $darkBlue;
+    color: $orange;
+    margin: 185px 109px 0 110px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .thank-you {
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: $headingLarge;
+    line-height: 35px;
+    color: $pureWhite;
+  }
+
+  .appreciate {
+    margin: 15px 40px 45px 32px;
+    font-weight: 400;
+    font-size: $bodyText;
+    line-height: 24px;
+    text-align: center;
+    color: $lightGray;
+  }
+}
